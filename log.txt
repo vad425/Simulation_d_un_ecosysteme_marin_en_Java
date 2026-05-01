@@ -1,0 +1,630 @@
+MALISEV VADIM 21302160
+
+Siluation sur un terrain de taille 3 par 3 avec 5 tour de boucle avec intialement 5 ressources: 
+
+TERRAIN INITIAL: 
+
+:---:---:---:
+|   |   |Cru|
+:---:---:---:
+|P_h|Cru|P_i|
+:---:---:---:
+|A_t|   |Cru|
+:---:---:---:
+LISTE DES RESSOURCES:
+
+Crustacé[id:3 quantite:10 position:(1,3)], direction = droite
+P_herbivore[id:1 quantite:3 position:(2,1)], direction = bas
+Crustacé[id:10 quantite:10 position:(2,2)], direction = bas
+P_invasif[id:2 quantite:10 position:(2,3)], direction = bas
+A_toxique[id:4 quantite:1 position:(3,1)]
+Crustacé[id:7 quantite:10 position:(3,3)], direction = haut
+
+
+TOUR DE BOUBLE NUMERO: 1 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+P_herbivore[id:1 quantite:1 position:(2,1)], direction = bas mange A_toxique[id:4 quantite:1 position:(3,1)]
+P_invasif[id:2 quantite:19 position:(2,3)], direction = bas mange Crustacé[id:7 quantite:10 position:(3,3)], direction = haut
+
+LISTE DES RESSOURCES:
+Crustacé[id:3 quantite:9 position:(1,2)], direction = haut
+P_herbivore[id:1 quantite:1 position:(3,1)], direction = haut
+Crustacé[id:10 quantite:9 position:(3,2)], direction = bas
+P_invasif[id:2 quantite:19 position:(3,3)], direction = bas
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:
+|   |Cru|   |
+:---:---:---:
+|   |   |   |
+:---:---:---:
+|P_h|Cru|P_i|
+:---:---:---:
+Position du bateau en position x:2, Position y:1 le solde est de :-1 sa direction est :droite et sa liste de peche est :pas encore de poisson pêché
+
+
+TOUR DE BOUBLE NUMERO: 2 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+Crustacé[id:10 quantite:8 position:(3,2)], direction = haut ne peut pas manger Crustacé[id:3 quantite:8 position:(2,2)], direction = bas donc ne bouge pas
+
+LISTE DES RESSOURCES:
+Crustacé[id:3 quantite:8 position:(2,2)], direction = bas
+P_herbivore[id:1 quantite:0 position:(2,1)], direction = haut
+Crustacé[id:10 quantite:8 position:(3,2)], direction = haut
+P_invasif[id:2 quantite:18 position:(2,3)], direction = bas
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:
+|   |   |   |
+:---:---:---:
+|P_h|Cru|P_i|
+:---:---:---:
+|   |Cru|   |
+:---:---:---:
+Crustacé[id:3 quantite:8 position:(-1,-1)], direction = bas a été peché
+Position du bateau en position x:2, Position y:2 le solde est de :7 sa direction est :droite et sa liste de peche est :Crustacé[id:3 quantite:8 position:(-1,-1)], direction = bas
+
+
+TOUR DE BOUBLE NUMERO: 3 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+P_herbivore[id:1 quantite:0 position:(-1,-1)], direction = haut est mort de faim
+
+LISTE DES RESSOURCES:
+Crustacé[id:10 quantite:7 position:(2,2)], direction = haut
+P_invasif[id:2 quantite:17 position:(3,3)], direction = bas
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:
+|   |   |   |
+:---:---:---:
+|   |Cru|   |
+:---:---:---:
+|   |   |P_i|
+:---:---:---:
+Position du bateau en position x:2, Position y:3 le solde est de :6 sa direction est :droite et sa liste de peche est :Crustacé[id:3 quantite:8 position:(-1,-1)], direction = bas
+
+
+TOUR DE BOUBLE NUMERO: 4 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+
+LISTE DES RESSOURCES:
+Crustacé[id:10 quantite:6 position:(1,2)], direction = haut
+P_invasif[id:2 quantite:16 position:(2,3)], direction = haut
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:
+|   |Cru|   |
+:---:---:---:
+|   |   |P_i|
+:---:---:---:
+|   |   |   |
+:---:---:---:
+Position du bateau en position x:2, Position y:2 le solde est de :6 sa direction est :gauche et sa liste de peche est :Crustacé[id:3 quantite:8 position:(-1,-1)], direction = bas
+
+
+TOUR DE BOUBLE NUMERO: 5 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+
+LISTE DES RESSOURCES:
+Crustacé[id:10 quantite:5 position:(2,2)], direction = bas
+P_invasif[id:2 quantite:15 position:(1,3)], direction = haut
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:
+|   |   |P_i|
+:---:---:---:
+|   |Cru|   |
+:---:---:---:
+|   |   |   |
+:---:---:---:
+Position du bateau en position x:2, Position y:1 le solde est de :5 sa direction est :gauche et sa liste de peche est :Crustacé[id:3 quantite:8 position:(-1,-1)], direction = bas
+
+
+FIN DE LA SIMULATION
+LE SOLDE FINAL DE L'AGENT EST DE :5 ET SA LISTE DE PECHE EST :1
+
+
+
+!!!!!!!
+SIMULATION NUMERO 2
+Siluation sur un terrain de taille 5 par 5 avec 15 tour de boucle avec intialement 20 ressources: 
+!!!!!!!
+
+TERRAIN INITIAL: 
+
+:---:---:---:---:---:
+|P_h|P_i|   |   |A_t|
+:---:---:---:---:---:
+|P_h|   |P_c|Cru|   |
+:---:---:---:---:---:
+|Hui|A_t|P_h|Cru|P_c|
+:---:---:---:---:---:
+|   |P_c|A_t|   |Hui|
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+LISTE DES RESSOURCES:
+
+P_herbivore[id:12 quantite:3 position:(1,1)], direction = bas
+P_invasif[id:20 quantite:10 position:(1,2)], direction = bas
+A_toxique[id:15 quantite:3 position:(1,5)]
+P_herbivore[id:3 quantite:3 position:(2,1)], direction = droite
+P_carnivore[id:6 quantite:5 position:(2,3)], direction = droite
+Crustacé[id:14 quantite:10 position:(2,4)], direction = droite
+Huitre[id:1 quantite:3 position:(3,1)]
+A_toxique[id:2 quantite:3 position:(3,2)]
+P_herbivore[id:19 quantite:3 position:(3,3)], direction = droite
+Crustacé[id:5 quantite:10 position:(3,4)], direction = droite
+P_carnivore[id:7 quantite:5 position:(3,5)], direction = haut
+P_carnivore[id:10 quantite:5 position:(4,2)], direction = haut
+A_toxique[id:17 quantite:1 position:(4,3)]
+Huitre[id:8 quantite:3 position:(4,5)]
+
+
+TOUR DE BOUBLE NUMERO: 1 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+P_herbivore[id:12 quantite:2 position:(1,1)], direction = bas ne peut pas manger P_herbivore[id:3 quantite:3 position:(2,1)], direction = droite donc ne bouge pas
+P_herbivore[id:3 quantite:2 position:(2,1)], direction = droite ne peut pas manger P_invasif[id:20 quantite:9 position:(2,2)], direction = droite donc ne bouge pas
+P_carnivore[id:6 quantite:4 position:(2,3)], direction = droite ne peut pas manger Crustacé[id:14 quantite:10 position:(2,4)], direction = droite donc ne bouge pas
+P_herbivore[id:19 quantite:2 position:(3,3)], direction = droite ne peut pas manger Crustacé[id:5 quantite:10 position:(3,4)], direction = droite donc ne bouge pas
+Crustacé[id:5 quantite:9 position:(3,4)], direction = droite ne peut pas manger P_carnivore[id:7 quantite:5 position:(3,5)], direction = haut donc ne bouge pas
+P_carnivore[id:7 quantite:4 position:(3,5)], direction = haut ne peut pas manger Crustacé[id:14 quantite:9 position:(2,5)], direction = droite donc ne bouge pas
+P_carnivore[id:10 quantite:0 position:(4,2)], direction = haut mange A_toxique[id:2 quantite:4 position:(3,2)]
+
+LISTE DES RESSOURCES:
+P_herbivore[id:12 quantite:2 position:(1,1)], direction = bas
+P_invasif[id:20 quantite:9 position:(2,2)], direction = droite
+A_toxique[id:15 quantite:4 position:(1,5)]
+P_herbivore[id:3 quantite:2 position:(2,1)], direction = droite
+P_carnivore[id:6 quantite:4 position:(2,3)], direction = droite
+Crustacé[id:14 quantite:9 position:(2,5)], direction = droite
+Huitre[id:1 quantite:4 position:(3,1)]
+P_herbivore[id:19 quantite:2 position:(3,3)], direction = droite
+Crustacé[id:5 quantite:9 position:(3,4)], direction = droite
+P_carnivore[id:7 quantite:4 position:(3,5)], direction = haut
+P_carnivore[id:10 quantite:0 position:(3,2)], direction = haut
+A_toxique[id:17 quantite:2 position:(4,3)]
+Huitre[id:8 quantite:4 position:(4,5)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|P_h|   |   |   |A_t|
+:---:---:---:---:---:
+|P_h|P_i|P_c|   |Cru|
+:---:---:---:---:---:
+|Hui|P_c|P_h|Cru|P_c|
+:---:---:---:---:---:
+|   |   |A_t|   |Hui|
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+P_carnivore[id:26 quantite:5 position:(-1,-1)], direction = basune nouvelle ressource est apparue
+la ressource n'a pas pu être ajoutée dans le terrain car la case était déjà occupé
+A_toxique[id:17 quantite:2 position:(-1,-1)] a été peché
+Position du bateau en position x:4, Position y:3 le solde est de :-1 sa direction est :bas et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]
+
+
+TOUR DE BOUBLE NUMERO: 2 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+P_herbivore[id:12 quantite:1 position:(1,1)], direction = bas ne peut pas manger P_herbivore[id:3 quantite:2 position:(2,1)], direction = droite donc ne bouge pas
+P_invasif[id:20 quantite:12 position:(2,2)], direction = droite mange P_carnivore[id:6 quantite:4 position:(2,3)], direction = droite
+P_herbivore[id:19 quantite:1 position:(3,3)], direction = droite ne peut pas manger Crustacé[id:5 quantite:9 position:(3,4)], direction = droite donc ne bouge pas
+Crustacé[id:5 quantite:8 position:(3,4)], direction = droite ne peut pas manger P_carnivore[id:7 quantite:4 position:(3,5)], direction = haut donc ne bouge pas
+P_carnivore[id:10 quantite:0 position:(-1,-1)], direction = haut est mort de faim
+
+LISTE DES RESSOURCES:
+P_herbivore[id:12 quantite:1 position:(1,1)], direction = bas
+P_invasif[id:20 quantite:12 position:(2,3)], direction = droite
+A_toxique[id:15 quantite:5 position:(1,5)]
+P_herbivore[id:3 quantite:1 position:(2,2)], direction = droite
+Crustacé[id:14 quantite:8 position:(2,4)], direction = gauche
+Huitre[id:1 quantite:5 position:(3,1)]
+P_herbivore[id:19 quantite:1 position:(3,3)], direction = droite
+Crustacé[id:5 quantite:8 position:(3,4)], direction = droite
+P_carnivore[id:7 quantite:3 position:(2,5)], direction = haut
+Huitre[id:8 quantite:5 position:(4,5)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|P_h|   |   |   |A_t|
+:---:---:---:---:---:
+|   |P_h|P_i|Cru|P_c|
+:---:---:---:---:---:
+|Hui|   |P_h|Cru|   |
+:---:---:---:---:---:
+|   |   |   |   |Hui|
+:---:---:---:---:---:
+|   |   |   |   |A_t|
+:---:---:---:---:---:
+Position du bateau en position x:5, Position y:3 le solde est de :-1 sa direction est :bas et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]
+
+
+TOUR DE BOUBLE NUMERO: 3 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+P_invasif[id:20 quantite:19 position:(2,3)], direction = droite mange Crustacé[id:14 quantite:8 position:(2,4)], direction = gauche
+P_herbivore[id:19 quantite:0 position:(3,3)], direction = droite ne peut pas manger Crustacé[id:5 quantite:8 position:(3,4)], direction = droite donc ne bouge pas
+P_carnivore[id:7 quantite:0 position:(2,5)], direction = haut mange A_toxique[id:15 quantite:6 position:(1,5)]
+
+LISTE DES RESSOURCES:
+P_herbivore[id:12 quantite:0 position:(2,1)], direction = bas
+P_invasif[id:20 quantite:19 position:(2,4)], direction = haut
+P_herbivore[id:3 quantite:0 position:(2,3)], direction = droite
+Huitre[id:1 quantite:6 position:(3,1)]
+P_herbivore[id:19 quantite:0 position:(3,3)], direction = droite
+Crustacé[id:5 quantite:7 position:(3,5)], direction = gauche
+P_carnivore[id:7 quantite:0 position:(1,5)], direction = haut
+Huitre[id:8 quantite:6 position:(4,5)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |P_c|
+:---:---:---:---:---:
+|P_h|   |P_h|P_i|   |
+:---:---:---:---:---:
+|Hui|   |P_h|   |Cru|
+:---:---:---:---:---:
+|   |   |   |   |Hui|
+:---:---:---:---:---:
+|   |   |   |   |A_t|
+:---:---:---:---:---:
+Position du bateau en position x:4, Position y:3 le solde est de :-2 sa direction est :haut et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]
+
+
+TOUR DE BOUBLE NUMERO: 4 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+P_herbivore[id:12 quantite:0 position:(-1,-1)], direction = bas est mort de faim
+P_herbivore[id:3 quantite:0 position:(-1,-1)], direction = droite est mort de faim
+P_herbivore[id:19 quantite:0 position:(-1,-1)], direction = droite est mort de faim
+P_carnivore[id:7 quantite:0 position:(-1,-1)], direction = haut est mort de faim
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:18 position:(1,4)], direction = haut
+Huitre[id:1 quantite:7 position:(3,1)]
+Crustacé[id:5 quantite:6 position:(3,4)], direction = gauche
+Huitre[id:8 quantite:7 position:(4,5)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |P_i|   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|Hui|   |   |Cru|   |
+:---:---:---:---:---:
+|   |   |   |   |Hui|
+:---:---:---:---:---:
+|   |   |   |   |A_t|
+:---:---:---:---:---:
+Position du bateau en position x:3, Position y:3 le solde est de :-2 sa direction est :haut et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]
+
+
+TOUR DE BOUBLE NUMERO: 5 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:17 position:(2,4)], direction = bas
+Huitre[id:1 quantite:8 position:(3,1)]
+Crustacé[id:5 quantite:5 position:(3,3)], direction = gauche
+Huitre[id:8 quantite:8 position:(4,5)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |P_i|   |
+:---:---:---:---:---:
+|Hui|   |Cru|   |   |
+:---:---:---:---:---:
+|   |   |   |   |Hui|
+:---:---:---:---:---:
+|   |   |   |   |A_t|
+:---:---:---:---:---:
+Position du bateau en position x:2, Position y:3 le solde est de :-3 sa direction est :haut et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]
+
+
+TOUR DE BOUBLE NUMERO: 6 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:16 position:(3,4)], direction = bas
+Huitre[id:1 quantite:9 position:(3,1)]
+Crustacé[id:5 quantite:4 position:(3,2)], direction = gauche
+Huitre[id:8 quantite:9 position:(4,5)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|Hui|Cru|   |P_i|   |
+:---:---:---:---:---:
+|   |   |   |   |Hui|
+:---:---:---:---:---:
+|   |   |   |   |A_t|
+:---:---:---:---:---:
+Position du bateau en position x:1, Position y:3 le solde est de :-3 sa direction est :bas et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]
+
+
+TOUR DE BOUBLE NUMERO: 7 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+Crustacé[id:5 quantite:13 position:(3,2)], direction = gauche mange Huitre[id:1 quantite:10 position:(3,1)]
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:15 position:(4,4)], direction = bas
+Crustacé[id:5 quantite:13 position:(3,1)], direction = haut
+Huitre[id:8 quantite:10 position:(4,5)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|Cru|   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |P_i|Hui|
+:---:---:---:---:---:
+|   |   |   |   |A_t|
+:---:---:---:---:---:
+Position du bateau en position x:2, Position y:3 le solde est de :-4 sa direction est :bas et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]
+
+
+TOUR DE BOUBLE NUMERO: 8 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+Huitre[id:8 quantite:10 position:(-1,-1)] est mort
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:14 position:(5,4)], direction = droite
+Crustacé[id:5 quantite:12 position:(2,1)], direction = bas
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|Cru|   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |P_i|A_t|
+:---:---:---:---:---:
+Crustacé[id:27 quantite:10 position:(4,4)], direction = gaucheune nouvelle ressource est apparue
+Position du bateau en position x:3, Position y:3 le solde est de :-4 sa direction est :bas et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]
+
+
+TOUR DE BOUBLE NUMERO: 9 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+P_invasif[id:20 quantite:11 position:(5,4)], direction = droite mange A_toxique[id:25 quantite:2 position:(5,5)]
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:11 position:(5,5)], direction = droite
+Crustacé[id:5 quantite:11 position:(3,1)], direction = bas
+Crustacé[id:27 quantite:9 position:(4,3)], direction = gauche
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|Cru|   |   |   |   |
+:---:---:---:---:---:
+|   |   |Cru|   |   |
+:---:---:---:---:---:
+|   |   |   |   |P_i|
+:---:---:---:---:---:
+Crustacé[id:27 quantite:9 position:(-1,-1)], direction = gauche a été peché
+Position du bateau en position x:4, Position y:3 le solde est de :4 sa direction est :bas et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]Crustacé[id:27 quantite:9 position:(-1,-1)], direction = gauche
+
+
+TOUR DE BOUBLE NUMERO: 10 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:10 position:(5,4)], direction = gauche
+Crustacé[id:5 quantite:10 position:(4,1)], direction = bas
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|Cru|   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |P_i|   |
+:---:---:---:---:---:
+Position du bateau en position x:5, Position y:3 le solde est de :4 sa direction est :bas et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]Crustacé[id:27 quantite:9 position:(-1,-1)], direction = gauche
+
+
+TOUR DE BOUBLE NUMERO: 11 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:9 position:(5,3)], direction = gauche
+Crustacé[id:5 quantite:9 position:(5,1)], direction = bas
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|Cru|   |P_i|   |   |
+:---:---:---:---:---:
+Position du bateau en position x:4, Position y:3 le solde est de :3 sa direction est :haut et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]Crustacé[id:27 quantite:9 position:(-1,-1)], direction = gauche
+
+
+TOUR DE BOUBLE NUMERO: 12 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:8 position:(5,2)], direction = haut
+Crustacé[id:5 quantite:8 position:(4,1)], direction = haut
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|Cru|   |   |   |   |
+:---:---:---:---:---:
+|   |P_i|   |   |   |
+:---:---:---:---:---:
+A_verte[id:28 quantite:2 position:(3,1)]une nouvelle ressource est apparue
+Position du bateau en position x:3, Position y:3 le solde est de :3 sa direction est :haut et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]Crustacé[id:27 quantite:9 position:(-1,-1)], direction = gauche
+
+
+TOUR DE BOUBLE NUMERO: 13 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+Crustacé[id:5 quantite:7 position:(4,1)], direction = haut ne peut pas manger A_verte[id:28 quantite:2 position:(3,1)] donc ne bouge pas
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:7 position:(4,2)], direction = haut
+Crustacé[id:5 quantite:7 position:(4,1)], direction = haut
+A_verte[id:28 quantite:3 position:(3,1)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|A_v|   |   |   |   |
+:---:---:---:---:---:
+|Cru|P_i|   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+Position du bateau en position x:2, Position y:3 le solde est de :2 sa direction est :haut et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]Crustacé[id:27 quantite:9 position:(-1,-1)], direction = gauche
+
+
+TOUR DE BOUBLE NUMERO: 14 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+Crustacé[id:5 quantite:6 position:(4,1)], direction = haut ne peut pas manger A_verte[id:28 quantite:3 position:(3,1)] donc ne bouge pas
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:6 position:(3,2)], direction = haut
+Crustacé[id:5 quantite:6 position:(4,1)], direction = haut
+A_verte[id:28 quantite:4 position:(3,1)]
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|A_v|P_i|   |   |   |
+:---:---:---:---:---:
+|Cru|   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+P_herbivore[id:30 quantite:3 position:(2,4)], direction = gaucheune nouvelle ressource est apparue
+Position du bateau en position x:1, Position y:3 le solde est de :2 sa direction est :haut et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]Crustacé[id:27 quantite:9 position:(-1,-1)], direction = gauche
+
+
+TOUR DE BOUBLE NUMERO: 15 
+
+Deplacement des ressources en cours et affichage de la chasse:
+
+P_invasif[id:20 quantite:3 position:(3,2)], direction = haut mange A_toxique[id:29 quantite:2 position:(2,2)]
+Crustacé[id:5 quantite:5 position:(4,1)], direction = haut ne peut pas manger A_verte[id:28 quantite:4 position:(3,1)] donc ne bouge pas
+
+LISTE DES RESSOURCES:
+P_invasif[id:20 quantite:3 position:(2,2)], direction = haut
+Crustacé[id:5 quantite:5 position:(4,1)], direction = haut
+A_verte[id:28 quantite:5 position:(3,1)]
+P_herbivore[id:30 quantite:2 position:(2,3)], direction = gauche
+
+
+AFFICHAGE DU TERRAIN MISE A JOUR
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+|   |P_i|P_h|   |   |
+:---:---:---:---:---:
+|A_v|   |   |   |   |
+:---:---:---:---:---:
+|Cru|   |   |   |   |
+:---:---:---:---:---:
+|   |   |   |   |   |
+:---:---:---:---:---:
+P_herbivore[id:30 quantite:2 position:(-1,-1)], direction = gauche a été peché
+Position du bateau en position x:2, Position y:3 le solde est de :3 sa direction est :bas et sa liste de peche est :A_toxique[id:17 quantite:2 position:(-1,-1)]Crustacé[id:27 quantite:9 position:(-1,-1)], direction = gaucheP_herbivore[id:30 quantite:2 position:(-1,-1)], direction = gauche
+
+
+FIN DE LA SIMULATION
+LE SOLDE FINAL DE L'AGENT EST DE :3 ET SA LISTE DE PECHE EST :3
+
+
+
+
